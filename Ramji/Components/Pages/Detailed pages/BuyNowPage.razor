@@ -1,0 +1,23 @@
+﻿@page "/Ramji/Components/Pages/Detailed pages/BuyNowPage"
+
+
+<!-- Payment Options -->
+<div class="payment-options">
+    <h4>Payment Options</h4>
+    <button class="payment-option" @click="selectCashOnDelivery">Cash on Delivery</button>
+    <button class="payment-option" @click="selectPaymentGateway">Payment Gateway</button>
+</div>
+
+@code {
+    private void selectCashOnDelivery()
+    {
+        // Add logic to handle cash on delivery selection
+        Console.WriteLine("Cash on Delivery selected.");
+    }
+
+    private void selectPaymentGateway()
+    {
+        // Add logic to handle payment gateway selection
+        Console.WriteLine("Payment Gateway selected.");
+    }
+}

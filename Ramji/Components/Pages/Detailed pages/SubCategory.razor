@@ -1,0 +1,28 @@
+﻿@page "/Ramji/Components/Pages/Detailed pages/SubCategory"
+
+
+<div class="cards-container1">
+<div class="card" @onclick="NavigateToProductCategory">
+    <div class="title">Mobile Category</div>
+    <img src="\Images\Images.1.jpeg" alt="Image 5"/>
+</div>
+<div class="card" @onclick="NavigateToProductCategory">
+    <div class="title">TV Category</div>
+        <img src="\Images\Images.1.jpeg" alt="Image 5"/>
+</div>
+</div>
+
+
+@code{
+    [Inject]
+    protected NavigationManager NavigationManager { get; set; }
+
+    // Method to handle navigation
+    private void NavigateToProductCategory()
+    {
+        Console.WriteLine("Navigating to ProductCategory page...");
+        NavigationManager.NavigateTo("/Ramji/Components/Pages/Detailed pages/ProductCategory");
+
+    }
+
+}

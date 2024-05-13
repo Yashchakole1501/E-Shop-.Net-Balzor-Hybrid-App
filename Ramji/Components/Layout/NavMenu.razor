@@ -1,0 +1,83 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="" @onclick="NavigateToCart">
+            E-Commerce App
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user-circle ms-2 @(IsAvatarActive ? "active" : "")" @onclick="ToggleAvatarActive" @onclick:stopPropagation="true"></i>
+            @if (ShowLoginLabel)
+            {
+                <div class="login-label">Login</div>
+            }
+        </a>
+    </div>
+</div>
+
+<!-- ... (rest of the HTML remains the same) ... -->
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> MyAccount
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" @onclick="NavigateToCart">
+                <span class="bi bi-cart-nav-menu" aria-hidden="true"></span> My Cart
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" @onclick="NavigateToLogin">
+                <span class="bi bi-person-nav-menu" aria-hidden="true"></span> Sign In/Up
+            </NavLink>
+        </div>
+    </nav>
+</div>
+
+@code {
+    [Inject]
+    protected NavigationManager NavigationManager { get; set; }
+
+    private bool IsAvatarActive { get; set; }
+    private bool ShowLoginLabel { get; set; } = true;
+
+    protected override void OnInitialized()
+    {
+        // Show the login label when the component is initialized
+        ShowLoginLabel = true;
+    }
+
+    private void NavigateToLogin()
+    {
+        NavigationManager.NavigateTo("/Ramji/Components/Pages/Detailed pages/Login");
+    }
+
+    private void NavigateToCart()
+    {
+        NavigationManager.NavigateTo("/Ramji/Components/Pages/Detailed pages/AddToCart");
+    }
+
+    private void NavigateToAccount()
+    {
+        NavigationManager.NavigateTo("/counter");
+    }
+
+    private void ToggleAvatarActive()
+    {
+        IsAvatarActive = !IsAvatarActive;
+        if (IsAvatarActive)
+        {
+            NavigateToAccount();
+            // Hide the login label when the avatar is clicked
+            ShowLoginLabel = false;
+        }
+    }
+}

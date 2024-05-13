@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chako\\source\\repos\\Ramji\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63F3D35E-C69E-4255-8E99-8AA8CAEDC71E}|Ramji\\Ramji.csproj|c:\\users\\chako\\source\\repos\\ramji\\ramji\\components\\pages\\detailed pages\\products.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63F3D35E-C69E-4255-8E99-8AA8CAEDC71E}|Ramji\\Ramji.csproj|solutionrelative:ramji\\components\\pages\\detailed pages\\products.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63F3D35E-C69E-4255-8E99-8AA8CAEDC71E}|Ramji\\Ramji.csproj|c:\\users\\chako\\source\\repos\\ramji\\ramji\\components\\pages\\detailed pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63F3D35E-C69E-4255-8E99-8AA8CAEDC71E}|Ramji\\Ramji.csproj|solutionrelative:ramji\\components\\pages\\detailed pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 195,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Products.razor",
+              "DocumentMoniker": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\Components\\Pages\\Detailed pages\\Products.razor",
+              "RelativeDocumentMoniker": "Ramji\\Components\\Pages\\Detailed pages\\Products.razor",
+              "ToolTip": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\Components\\Pages\\Detailed pages\\Products.razor",
+              "RelativeToolTip": "Ramji\\Components\\Pages\\Detailed pages\\Products.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T09:42:00.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\Components\\Pages\\Detailed pages\\Login.razor",
+              "RelativeDocumentMoniker": "Ramji\\Components\\Pages\\Detailed pages\\Login.razor",
+              "ToolTip": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\Components\\Pages\\Detailed pages\\Login.razor",
+              "RelativeToolTip": "Ramji\\Components\\Pages\\Detailed pages\\Login.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T09:41:41.2Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 195,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

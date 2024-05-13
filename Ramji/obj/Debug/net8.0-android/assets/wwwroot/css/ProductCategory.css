@@ -1,0 +1,33 @@
+﻿.cards-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card1 {
+    flex: 0 0 calc(50% - 20px); /* Two cards in one row with 20px margin */
+    margin: 0 20px 20px 0; /* Margin between cards and between rows */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+    .card1:nth-child(2n) {
+        margin-right: 0; /* Remove margin for every second card to ensure two cards in one row */
+    }
+
+    .card1 img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card1 .title1 {
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #f8f8f8;
+    }

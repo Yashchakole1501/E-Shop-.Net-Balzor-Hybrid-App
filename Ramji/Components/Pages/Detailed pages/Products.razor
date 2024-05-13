@@ -1,0 +1,78 @@
+﻿@page "/Ramji/Components/Pages/Detailed pages/Products"
+
+<h3>Product Details</h3>
+
+<div class="product-details">
+    <div class="product-image">
+        <img src="\Images\product.jpeg" alt="Product Image">
+        <div class="checkbox-container">
+            <input type="checkbox" id="productCheckbox" class="product-checkbox" @onchange="ToggleProductSelection">
+            <label for="productCheckbox" class="checkbox-label"></label>
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h4>Product Name</h4>
+        <p class="brand">Brand: Brand Name</p>
+        <p class="code">Product Code: XYZ123</p>
+        <p class="size">Size: Large</p>
+        <p class="mrp">MRP: $99.99</p>
+        <p class="discount">Discount: 20%</p>
+        <p class="info">Info:cvbchgfhgfhghghg</p>
+        <p class="Total">Total Price:</p>
+        <div class="quantity">
+            <button class="subtract-btn" @onclick="decrementQuantity">-</button>
+            <input type="number" class="quantity-input" value="@quantity" min="1" max="100" @oninput="UpdateQuantity" />
+            <button class="add-btn" @onclick="incrementQuantity">+</button>
+        </div>
+        <div class="buttons">
+            <button class="buy-now" @onclick="NavigateToBuyNowPage">Buy Now</button>
+            <button class="add-to-cart" @onclick="NavigateToAddToCartPage">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private int quantity = 1;
+    private bool isProductSelected = false;
+
+    [Inject]
+    protected NavigationManager NavigationManager { get; set; }
+
+    private void incrementQuantity()
+    {
+        if (quantity < 100) // Max quantity allowed
+        {
+            quantity++;
+        }
+    }
+
+    private void decrementQuantity()
+    {
+        if (quantity > 1) // Min quantity allowed
+        {
+            quantity--;
+        }
+    }
+
+    private void UpdateQuantity(ChangeEventArgs e)
+    {
+        quantity = Convert.ToInt32(e.Value);
+    }
+
+    private void NavigateToBuyNowPage()
+    {
+        NavigationManager.NavigateTo("/Ramji/Components/Pages/Detailed pages/BuyNowPage");
+    }
+
+    private void NavigateToAddToCartPage()
+    {
+        NavigationManager.NavigateTo("/Ramji/Components/Pages/Detailed pages/AddToCart");
+    }
+
+    private void ToggleProductSelection(ChangeEventArgs e)
+    {
+        isProductSelected = (bool)e.Value;
+        Console.WriteLine($"Product selected: {isProductSelected}");
+    }
+}

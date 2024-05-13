@@ -1,0 +1,164 @@
+﻿@page "/"
+
+
+<!-- HTML -->
+<div class="search-bar">
+  <div class="search-container">
+    <input type="text" placeholder="Search products, brands and more..." class="search-input">
+    <button class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </div>
+</div>
+
+
+<!--CAROUSEL BOOTSTRAP-->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/59473217fe1c5778.jpg?q=20" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/edc6e1819c37cb78.jpg?q=20" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/ef03aa1eee70b092.png?q=20" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/d523b3be81ebfb40.jpg?q=20" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/83191196ffdff00b.png?q=20" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<!--CARDS VIEWS-->
+<h4>All Categories</h4>
+<div class="cards-container">
+    <div class="card-wrapper">
+        <div class="card" @onclick="NavigateToSubCategory">
+            <div class="title">Personal care</div>
+            <img src="\Images\healthcare.jpeg" alt="Image 2" />
+        </div>
+        <div class="card" @onclick="NavigateToSubCategory">
+            <div class="title">Health Care </div>
+            <img src="\Images\healthcare.jpeg" alt="Image 2" />
+        </div>
+        <div class="card" @onclick="NavigateToSubCategory">
+            <div class="title">Products</div>
+            <img src="\Images\healthcare.jpeg" alt="Image 3">
+        </div>
+        <div class="card" @onclick="NavigateToSubCategory">
+            <div class="title">Care</div>
+            <img src="\Images\healthcare.jpeg" alt="Image 4">
+        </div>
+        <div class="card" @onclick="NavigateToSubCategory">
+            <div class="title">Mobile Category</div>
+            <img src="\Images\healthcare.jpeg" alt="Image 5">
+        </div>
+        <div class="card" @onclick="NavigateToSubCategory">
+            <div class="title">TV Category</div>
+            <img src="\Images\healthcare.jpeg" alt="Image 5">
+        </div>
+    </div>
+</div>
+
+
+<!--CARDS VIEWS-->
+<h4>Best Sellers</h4>
+<div class="cards-container">
+    <div class="card-wrapper">
+        <div class="card" @onclick="NavigateToProducts">
+            <div class="title">Personal care</div>
+            <img src="\Images\product.jpeg" alt="Image 2" />
+
+        </div>
+
+        <div class="card" @onclick="NavigateToProducts">
+            <div class="title">Health Care </div>
+            <img src="\Images\product.jpeg" alt="Image 2" />
+        </div>
+        <div class="card" @onclick="NavigateToProducts">
+            <div class="title">Products</div>
+            <img src="\Images\product.jpeg" alt="Image 3">
+        </div>
+        <div class="card" @onclick="NavigateToProducts">
+            <div class="title">Care</div>
+            <img src="\Images\product.jpeg" alt="Image 4">
+        </div>
+        <div class="card" @onclick="NavigateToProducts">
+            <div class="title">Mobile Category</div>
+            <img src="\Images\product.jpeg" alt="Image 5">
+        </div>
+        <div class="card" @onclick="NavigateToProducts">
+            <div class="title">TV Category</div>
+            <img src="\Images\product.jpeg" alt="Image 5">
+        </div>
+    </div>
+    </div>
+
+
+
+
+<!--CARDS VIEWS-->
+<h4>Best Offers</h4>
+<div class="cards-container">
+    <div class="card-wrapper">
+        <div class="card" @onclick="NavigateToProducts">
+            <div class="title">Personal care</div>
+            <img src="\Images\product1.jpeg" alt="Image 2" />
+        </div>
+
+        <div class="card" @onclick="NavigateToProducts">
+            <div class="title">Health Care </div>
+            <img src="\Images\product1.jpeg" alt="Image 2" />
+        </div>
+        <div class="card" @onclick="NavigateToProducts">
+            <div class="title">Products</div>
+            <img src="\Images\product1.jpeg" alt="Image 3">
+        </div>
+        <div class="card" @onclick="NavigateToProducts">
+            <div class="title">Care</div>
+            <img src="\Images\product1.jpeg" alt="Image 4">
+        </div>
+        <div class="card" @onclick="NavigateToProducts">
+            <div class="title">Mobile Category</div>
+            <img src="\Images\product1.jpeg" alt="Image 5">
+        </div>
+        <div class="card" @onclick="NavigateToProducts">
+            <div class="title">TV Category</div>
+            <img src="\Images\product1.jpeg" alt="Image 5">
+        </div>
+    </div>
+</div>
+
+
+@code {
+    [Inject]
+    protected NavigationManager NavigationManager { get; set; }
+
+    // Method to handle navigation
+    private void NavigateToSubCategory()
+    {
+        Console.WriteLine("Navigating to SubCategory page...");
+        NavigationManager.NavigateTo("/Ramji/Components/Pages/Detailed pages/SubCategory");
+       
+    }
+
+    private void NavigateToProducts()
+    {
+        Console.WriteLine("Navigating to Products page...");
+        NavigationManager.NavigateTo("/Ramji/Components/Pages/Detailed pages/Products");
+
+    }
+}

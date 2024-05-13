@@ -1,0 +1,117 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\Ramji.styles.css",
+      "PackagePath": "staticwebassets\\Ramji.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\Images\\Images.1.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Images.1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\Images\\Images.2.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Images.2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\Images\\background.jpeg",
+      "PackagePath": "staticwebassets\\Images\\background.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\Images\\healthcare.jpeg",
+      "PackagePath": "staticwebassets\\Images\\healthcare.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\Images\\product.jpeg",
+      "PackagePath": "staticwebassets\\Images\\product.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\Images\\product1.jpeg",
+      "PackagePath": "staticwebassets\\Images\\product1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\Images\\wallpaper.jpeg",
+      "PackagePath": "staticwebassets\\Images\\wallpaper.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\Images\\yash.png",
+      "PackagePath": "staticwebassets\\Images\\yash.png"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\css\\AddToCart.css",
+      "PackagePath": "staticwebassets\\css\\AddToCart.css"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\css\\BuyNowPage.css",
+      "PackagePath": "staticwebassets\\css\\BuyNowPage.css"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\css\\Home.css",
+      "PackagePath": "staticwebassets\\css\\Home.css"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\css\\MyAcoount.css",
+      "PackagePath": "staticwebassets\\css\\MyAcoount.css"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\css\\ProductCategory.css",
+      "PackagePath": "staticwebassets\\css\\ProductCategory.css"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\css\\ProductDetails.css",
+      "PackagePath": "staticwebassets\\css\\ProductDetails.css"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\css\\Products.css",
+      "PackagePath": "staticwebassets\\css\\Products.css"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\css\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Register.css"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\css\\SubCategory.css",
+      "PackagePath": "staticwebassets\\css\\SubCategory.css"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\chako\\source\\repos\\Ramji\\Ramji\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.Ramji.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.build.Ramji.props",
+      "PackagePath": "build\\Ramji.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildMultiTargeting.Ramji.props",
+      "PackagePath": "buildMultiTargeting\\Ramji.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildTransitive.Ramji.props",
+      "PackagePath": "buildTransitive\\Ramji.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

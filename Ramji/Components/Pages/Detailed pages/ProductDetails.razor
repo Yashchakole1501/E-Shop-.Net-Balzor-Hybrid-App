@@ -1,0 +1,37 @@
+﻿@page "/Ramji/Components/Pages/Detailed pages/ProductDetails"
+
+
+<div class="cards-container3">
+    <div class="card3" @onclick="NavigateToProducts">
+        <div class="title3">Air Freshners</div>
+        <img src="\Images\wallpaper.jpeg" alt="Image 5">
+    </div>
+    <div class="card3" @onclick="NavigateToProducts">
+        <div class="title3">Pooja Products</div>
+        <img src="\Images\wallpaper.jpeg" alt="Image 5">
+    </div>
+    <div class="card3" @onclick="NavigateToProducts">
+        <div class="title3">Laundry Essentials</div>
+        <img src="\Images\wallpaper.jpeg" alt="Image 5">
+    </div>
+    <div class="card3" @onclick="NavigateToProducts">
+        <div class="title3">Dishwashing Supplies</div>
+        <img src="\Images\wallpaper.jpeg" alt="Image 5">
+    </div>
+
+</div>
+
+
+@code {
+    [Inject]
+    protected NavigationManager NavigationManager { get; set; }
+
+    // Method to handle navigation
+    private void NavigateToProducts()
+    {
+        Console.WriteLine("Navigating to ProductDetails page...");
+        NavigationManager.NavigateTo("/Ramji/Components/Pages/Detailed pages/Products");
+
+    }
+
+}

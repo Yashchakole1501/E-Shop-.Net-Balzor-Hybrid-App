@@ -1,0 +1,115 @@
+﻿/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Heading Styles */
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+    h4::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: linear-gradient(to right, #ff6b6b, #ffa500);
+        border-radius: 2px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+/* Payment Options Container */
+.payment-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    perspective: 1000px;
+}
+
+/* Payment Option Button Styles */
+.payment-option {
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+    .payment-option::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+        transform: translateX(-100%);
+        transition: transform 0.6s ease;
+        z-index: 1;
+    }
+
+    .payment-option:hover::before {
+        transform: translateX(100%);
+    }
+
+    .payment-option:hover {
+        background: linear-gradient(to right, #2980b9, #3498db);
+        transform: translateY(-2px) rotateX(5deg);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .payment-option span {
+        position: relative;
+        z-index: 2;
+    }
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.payment-options,
+h4 {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .payment-option {
+        padding: 0.8rem 1.6rem;
+        font-size: 1rem;
+    }
+}

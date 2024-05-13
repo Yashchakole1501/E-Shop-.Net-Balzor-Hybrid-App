@@ -1,0 +1,7 @@
+﻿.cards-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px; /* Add space between cards */
+}
+
